@@ -73,5 +73,11 @@
                 return this.View();
             }
         }
+
+        public IActionResult Logout()
+        {
+            this.SignOut();
+            return this.RedirectToHome();
+        }
     }
 }
