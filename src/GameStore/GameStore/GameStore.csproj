@@ -11,11 +11,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GameStore.Data\GameStore.Data.csproj" />
+    <ProjectReference Include="..\GameStore.Utilities\GameStore.Utilities.csproj" />
     <ProjectReference Include="..\SimpleMvc.Framework\SimpleMvc.Framework.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

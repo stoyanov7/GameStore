@@ -2,6 +2,8 @@
 {
     using System;
     using Data;
+    using Services;
+    using Services.Contracts;
     using SimpleInjector;
     using SimpleInjector.Lifestyles;
     using SimpleMvc.Framework.Controllers;
@@ -23,6 +25,7 @@
 
             var container = router.Container;
 
+            container.Register<IUserService, UserService>();
             container.Register<GameStoreContext>(Lifestyle.Scoped);
 
             container.Verify();
